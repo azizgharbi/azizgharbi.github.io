@@ -2,7 +2,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-    <style>body{background-color:#2d3436}.body-on{background-color:#09233a}.container{display:flex;height:500px}.container div{margin:50px auto}.about-me-off{width:450px;opacity:0}.about-me{color:#fff;font-family:"Indie Flower",cursive;font-size:28px;animation:zooIn .5s both}.icons{display:flex;justify-content:space-between;list-style:none;width:375px;font-size:45px}.icons li a{text-decoration:none;color:#fff}.footer{text-align:center}.footer .btn-click{color:#fff;font-family:"Indie Flower",cursive;font-size:35px;background:0 0;border:1px solid #fff;padding:2 47;outline:0;cursor:pointer}.lamp{fill:#ffe680;fill-opacity:0}.lamp-on{fill-opacity:1}.lamp-fill{stroke:#fff}.lamp-fill-on{stroke:#ff4817}.lights-off{stroke-opacity:0}.lights-on{stroke-opacity:1}@keyframes zooIn{0%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}</style>
+    <style>body{background-color:#2d3436}.body-on{background-color:#09233a}.container{display:flex;height:500px}.container div{margin:50px auto}.about-me-off{width:450px;opacity:0}.about-me{color:#fff;font-family:"Indie Flower",cursive;font-size:28px;animation:zooIn .5s both}.icons{display:flex;justify-content:space-between;list-style:none;width:375px;font-size:45px}.icons li a{text-decoration:none;color:#fff}.footer{text-align:center}.footer .btn-click{color:#fff;font-family:"Indie Flower",cursive;font-size:35px;background:0 0;border:1px solid #fff;padding:2 47;outline:0;cursor:pointer}.lamp{fill:#ffe680;fill-opacity:0}.lamp-on{fill-opacity:1}.lamp-fill{stroke:#fff}.lamp-fill-on{stroke:#ff4817}.lights-off{stroke-opacity:0}.lights-on{stroke-opacity:1}.resume-link{text-decoration:none;color:#e390f7}@keyframes zooIn{0%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}</style>
   </head>
 
   <body>
@@ -13,22 +13,23 @@
           software developer<br>
           I'am Passionate about learning new technologies and especially
           <br>the open source , JavaScript and linux lover .
+          <a class="resume-link" href="resume.pdf"> => check my Resume</a>
         </p>
         <ul class="icons">
           <li>
-            <a href="https://stackoverflow.com/users/7253451/g-aziz"><i class="fab fa-stack-overflow"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/7253451/g-aziz"><i class="fab fa-stack-overflow"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/aziz-gharbi-3b6397137/"><i class="fab fa-linkedin-in"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/aziz-gharbi-3b6397137/"><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li>
-            <a href="https://github.com/azizgharbi"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://github.com/azizgharbi"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="https://codepen.io/azizgharbi"><i class="fab fa-codepen"></i></a>
+            <a target="_blank" href="https://codepen.io/azizgharbi"><i class="fab fa-codepen"></i></a>
           </li>
           <li>
-            <a href="https://twitter.com/aziz_grh"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://twitter.com/aziz_grh"><i class="fab fa-twitter"></i></a>
           </li>
           <ul></ul>
         </ul>
@@ -71,6 +72,6 @@
     <div class="footer">
       <button class="btn-click">Click!</button>
     </div>
-    <script>const body=document.querySelector("body"),btn=document.querySelector("button"),lamp=document.querySelector(".lamp"),lampFill=document.querySelector(".lamp-fill"),lights=document.querySelectorAll(".lights-off"),aboutMe=document.querySelector(".about-me-off");SVGElement&&SVGElement.prototype&&(SVGElement.prototype.hasClass=function(t){return new RegExp("(\\s|^)"+t+"(\\s|$)").test(this.getAttribute("class"))},SVGElement.prototype.addClass=function(t){this.hasClass(t)||this.setAttribute("class",this.getAttribute("class")+" "+t)},SVGElement.prototype.removeClass=function(t){var e=this.getAttribute("class").replace(new RegExp("(\\s|^)"+t+"(\\s|$)","g"),"$2");this.hasClass(t)&&this.setAttribute("class",e)},SVGElement.prototype.toggleClass=function(t){this.hasClass(t)?this.removeClass(t):this.addClass(t)}),btn.onclick=function(){body.classList.toggle("body-on"),lamp.toggleClass("lamp-on"),lampFill.toggleClass("lamp-fill-on"),[...lights].map(t=>{t.toggleClass("lights-on")}),aboutMe.classList.toggle("about-me")};</script>
+    <script>const body=document.querySelector("body"),btn=document.querySelector("button"),lamp=document.querySelector(".lamp"),lampFill=document.querySelector(".lamp-fill"),lights=document.querySelectorAll(".lights-off"),aboutMe=document.querySelector(".about-me-off");function addStyle(){body.classList.toggle("body-on"),lamp.toggleClass("lamp-on"),lampFill.toggleClass("lamp-fill-on"),[...lights].map(t=>{t.toggleClass("lights-on")}),aboutMe.classList.toggle("about-me")}SVGElement&&SVGElement.prototype&&(SVGElement.prototype.hasClass=function(t){return new RegExp("(\\s|^)"+t+"(\\s|$)").test(this.getAttribute("class"))},SVGElement.prototype.addClass=function(t){this.hasClass(t)||this.setAttribute("class",this.getAttribute("class")+" "+t)},SVGElement.prototype.removeClass=function(t){var e=this.getAttribute("class").replace(new RegExp("(\\s|^)"+t+"(\\s|$)","g"),"$2");this.hasClass(t)&&this.setAttribute("class",e)},SVGElement.prototype.toggleClass=function(t){this.hasClass(t)?this.removeClass(t):this.addClass(t)}),btn.onclick=function(){sessionStorage.setItem("show",!0),addStyle()},sessionStorage.getItem("show")&&addStyle();</script>
   </body>
 </html>

@@ -75,6 +75,10 @@
       .lights-on {
         stroke-opacity: 1;
       }
+      .resume-link {
+        text-decoration: none;
+        color: #e390f7;
+      }
       @keyframes zooIn {
         0% {
           transform: scale(1.1);
@@ -95,30 +99,35 @@
           software developer<br />
           I'am Passionate about learning new technologies and especially
           <br />the open source , JavaScript and linux lover .
+          <a class="resume-link" href="resume.pdf"> => check my Resume</a>
         </p>
         <ul class="icons">
           <li>
-            <a href="https://stackoverflow.com/users/7253451/g-aziz"
+            <a
+              target="_blank"
+              href="https://stackoverflow.com/users/7253451/g-aziz"
               ><i class="fab fa-stack-overflow"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/aziz-gharbi-3b6397137/"
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aziz-gharbi-3b6397137/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/azizgharbi"
+            <a target="_blank" href="https://github.com/azizgharbi"
               ><i class="fab fa-github"></i
             ></a>
           </li>
           <li>
-            <a href="https://codepen.io/azizgharbi"
+            <a target="_blank" href="https://codepen.io/azizgharbi"
               ><i class="fab fa-codepen"></i
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/aziz_grh"
+            <a target="_blank" href="https://twitter.com/aziz_grh"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
@@ -267,14 +276,23 @@
           this.hasClass(t) ? this.removeClass(t) : this.addClass(t);
         })),
         (btn.onclick = function() {
-          body.classList.toggle("body-on"),
-            lamp.toggleClass("lamp-on"),
-            lampFill.toggleClass("lamp-fill-on"),
-            [...lights].map(t => {
-              t.toggleClass("lights-on");
-            }),
-            aboutMe.classList.toggle("about-me");
+          sessionStorage.setItem("show", true);
+          addStyle();
         });
+
+      if (sessionStorage.getItem("show")) {
+        addStyle();
+      }
+
+      function addStyle() {
+        body.classList.toggle("body-on"),
+          lamp.toggleClass("lamp-on"),
+          lampFill.toggleClass("lamp-fill-on"),
+          [...lights].map(t => {
+            t.toggleClass("lights-on");
+          }),
+          aboutMe.classList.toggle("about-me");
+      }
     </script>
   </body>
 </html>
