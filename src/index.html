@@ -13,7 +13,7 @@
         background-color: #2d3436;
       }
       .body-on {
-        background-color: #09233a;
+        background-color: #2783d4;
       }
       .container {
         display: flex;
@@ -41,7 +41,7 @@
       }
       .icons li a {
         text-decoration: none;
-        color: #fff;
+        color: #fee680;
       }
       .footer {
         text-align: center;
@@ -76,9 +76,13 @@
         stroke-opacity: 1;
       }
       .resume-link {
+        display: block;
         text-decoration: none;
-        color: #e390f7;
+        color: #ff71bf;
+        font-weight: bolder;
+        animation: bounce 1s infinite;
       }
+
       @keyframes zooIn {
         0% {
           transform: scale(1.1);
@@ -86,6 +90,15 @@
         100% {
           transform: scale(1);
           opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        50% {
+          transform: translateX(20px);
+        }
+        100% {
+          transform: translateX(-5px);
         }
       }
     </style>
