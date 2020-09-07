@@ -140,7 +140,7 @@
             ></a>
           </li>
           <li>
-            <a target="_blank" href="https://twitter.com/aziz_grh"
+            <a target="_blank" href="https://twitter.com/thepinkyboat"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
@@ -269,26 +269,26 @@
         aboutMe = document.querySelector(".about-me-off");
       SVGElement &&
         SVGElement.prototype &&
-        ((SVGElement.prototype.hasClass = function(t) {
+        ((SVGElement.prototype.hasClass = function (t) {
           return new RegExp("(\\s|^)" + t + "(\\s|$)").test(
             this.getAttribute("class")
           );
         }),
-        (SVGElement.prototype.addClass = function(t) {
+        (SVGElement.prototype.addClass = function (t) {
           this.hasClass(t) ||
             this.setAttribute("class", this.getAttribute("class") + " " + t);
         }),
-        (SVGElement.prototype.removeClass = function(t) {
+        (SVGElement.prototype.removeClass = function (t) {
           var e = this.getAttribute("class").replace(
             new RegExp("(\\s|^)" + t + "(\\s|$)", "g"),
             "$2"
           );
           this.hasClass(t) && this.setAttribute("class", e);
         }),
-        (SVGElement.prototype.toggleClass = function(t) {
+        (SVGElement.prototype.toggleClass = function (t) {
           this.hasClass(t) ? this.removeClass(t) : this.addClass(t);
         })),
-        (btn.onclick = function() {
+        (btn.onclick = function () {
           sessionStorage.setItem("show", true);
           addStyle();
         });
@@ -301,7 +301,7 @@
         body.classList.toggle("body-on"),
           lamp.toggleClass("lamp-on"),
           lampFill.toggleClass("lamp-fill-on"),
-          [...lights].map(t => {
+          [...lights].map((t) => {
             t.toggleClass("lights-on");
           }),
           aboutMe.classList.toggle("about-me");
