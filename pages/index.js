@@ -1,4 +1,4 @@
-import Rectangle from "./components/Rectangle";
+import Rectangle from "./../components/Rectangle";
 export default function Home() {
   const infos = [
     {
