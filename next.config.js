@@ -1,12 +1,8 @@
-const repo = "azizgharbi.github.io";
-const assetPrefix = `/${repo}/`;
-const basePath = `/${repo}`;
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 };
 
 module.exports = nextConfig;
