@@ -7,8 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_BASE_PATH: https://github.com/azizgharbi/azizgharbi.github.io/
     strategy:
       matrix:
         node-version: [14.x]
