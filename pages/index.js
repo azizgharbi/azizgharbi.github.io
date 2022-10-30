@@ -30,10 +30,7 @@ export default function Home() {
       <div className="footer">
         <p>
           The end, <span>Download my resume</span>{" "}
-          <a
-            href="https://github.com/azizgharbi/azizgharbi.github.io/blob/master/resume.pdf"
-            target="_blank"
-          >
+          <a href="https://azizgharbi.github.io/resume.pdf" target="_blank">
             HERE.
           </a>
         </p>
