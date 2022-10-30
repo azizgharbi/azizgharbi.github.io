@@ -7,8 +7,8 @@ export default {
       background: isHover && !isClicked ? "#80c71f" : "#89ac59",
       height:
         !isClicked && isHover
-          ? "325px"
-          : `${(325 + Math.random() * 150).toFixed()}px`,
+          ? "180px"
+          : `${(180 + Math.random() * 100).toFixed()}px`,
       width: "75px",
     };
   },
