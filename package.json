@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "start": "next start"
-},
+    "export": "next export"
   },
   "dependencies": {
     "file-loader": "^6.2.0",
