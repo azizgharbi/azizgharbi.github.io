@@ -16,7 +16,23 @@ export default function Home() {
   ];
   return (
     <div>
-      <div className="ground_1"></div>
+      <div className="ground_1">
+        <ul className="ground_menu">
+          <li>
+            <a href="https://github.com/azizgharbi" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://stackoverflow.com/users/7253451/g-aziz"
+              target="_blank"
+            >
+              StackOverflow
+            </a>
+          </li>
+        </ul>
+      </div>
       <div
         style={{
           display: "flex",
