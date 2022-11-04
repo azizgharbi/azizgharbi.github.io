@@ -1,4 +1,7 @@
 import Rectangle from "./../components/Rectangle";
+import Menu from "./../components/Menu";
+import Footer from "./../components/Footer";
+
 export default function Home() {
   const infos = [
     {
@@ -16,23 +19,7 @@ export default function Home() {
   ];
   return (
     <div>
-      <div className="ground_1">
-        <ul className="ground_menu">
-          <li>
-            <a href="https://github.com/azizgharbi" target="_blank">
-              Github
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://stackoverflow.com/users/7253451/g-aziz"
-              target="_blank"
-            >
-              StackOverflow
-            </a>
-          </li>
-        </ul>
-      </div>
+      <Menu />
       <div
         style={{
           display: "flex",
@@ -43,14 +30,10 @@ export default function Home() {
           <Rectangle key={index} description={description} />
         ))}
       </div>
-      <div className="footer">
-        <p>
-          The end, <span>Download my resume</span>{" "}
-          <a href="https://azizgharbi.github.io/resume.pdf" target="_blank">
-            HERE.
-          </a>
-        </p>
+      <div className="game_text">
+        <p>Guess where i am ?</p>
       </div>
+      <Footer />
     </div>
   );
 }

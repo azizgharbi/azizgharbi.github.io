@@ -45,6 +45,11 @@ a {
   }
   .ground_menu > li > a {
   }
+  .game_text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+  }
   .rectangle_text {
     position: absolute;
     margin-top: 120px;
