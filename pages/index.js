@@ -8,7 +8,7 @@ export default function Home() {
       description: `Aziz Gharbi, 
         Software developer
         I'am Passionate about learning new technologies,
-        Open source , Lua, Rust, (Typescript/JavaScript), Linux Lover.`,
+        Open source , Lua, Rust, (Typescript/JavaScript) and Linux Lover.`,
     },
     {
       description: null,
