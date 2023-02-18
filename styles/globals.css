@@ -64,9 +64,10 @@ a {
   .ground_menu > li > a {
   }
   .game_text {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 25px;
+    margin-bottom: 75px;
   }
   .rectangle_text {
     position: absolute;
