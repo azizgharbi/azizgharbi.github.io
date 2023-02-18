@@ -37,7 +37,7 @@ export default function Home() {
       <div className="game_text">
         <p>
           {`Don't tell anyone, But finding the Triforce box will
-          grant you +25 charisma points in real life. Trust me, I'm a programmer;`}
+          grant you +25 charisma points in real life. Trust me, I'm a programmer.`}
         </p>
       </div>
       <GithubBox />
