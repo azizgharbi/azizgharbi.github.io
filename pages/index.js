@@ -1,6 +1,7 @@
 import Rectangle from "./../components/Rectangle";
 import Menu from "./../components/Menu";
 import Footer from "./../components/Footer";
+import { GithubBox } from "../components/github";
 
 export default function Home() {
   const infos = [
@@ -9,12 +10,15 @@ export default function Home() {
         Software developer
         I'am Passionate about learning new technologies,
         Open source , Lua, Rust, (Typescript/JavaScript) and Linux Lover.`,
+      note: "C3",
     },
     {
       description: null,
+      note: "C4",
     },
     {
       description: null,
+      note: "C5",
     },
   ];
   return (
@@ -26,13 +30,14 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        {infos.map(({ description }, index) => (
-          <Rectangle key={index} description={description} />
+        {infos.map(({ description, note }, index) => (
+          <Rectangle key={index} description={description} note={note} />
         ))}
       </div>
       <div className="game_text">
         <p>Guess where i am ?</p>
       </div>
+      <GithubBox />
       <Footer />
     </div>
   );
