@@ -1,4 +1,4 @@
-export default {
+const rectangleStyle = {
   shape: function (isClicked = false, isHover = false) {
     return {
       transition: "all .3s",
@@ -13,3 +13,5 @@ export default {
     };
   },
 };
+
+export default rectangleStyle;

@@ -1,3 +1,4 @@
+import React from "react";
 import Rectangle from "./../components/Rectangle";
 import Menu from "./../components/Menu";
 import Footer from "./../components/Footer";
@@ -30,8 +31,8 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        {infos.map(({ description, note }, index) => (
-          <Rectangle key={index} description={description} note={note} />
+        {infos.map(({ description, note }) => (
+          <Rectangle key={note} description={description} note={note} />
         ))}
       </div>
       <div className="game_text">

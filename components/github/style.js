@@ -1,4 +1,4 @@
-export default {
+const styles = {
   GithubBox: {
     overflowY: "auto",
     height: "200px",
@@ -16,3 +16,5 @@ export default {
     fontWeight: "bold",
   },
 };
+
+export default styles;
