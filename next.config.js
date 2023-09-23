@@ -1,7 +1,7 @@
 const nextConfig = {
   images: {
-    unoptimized: true
-},
+    unoptimized: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
   basePath: "/azizgharbi.github.io",
