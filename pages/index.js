@@ -1,4 +1,4 @@
-import React from "react";
+'use server';
 import Menu from "./../components/Menu";
 import Footer from "./../components/Footer";
 import { GithubBox } from "../components/github";
