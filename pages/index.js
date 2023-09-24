@@ -1,4 +1,4 @@
-'use server';
+"use server";
 import Menu from "./../components/Menu";
 import Footer from "./../components/Footer";
 import { GithubBox } from "../components/github";
