@@ -1,8 +1,8 @@
 "use client";
 import Style from "./style";
 import { useEffect, useState } from "react";
-const entrypoint = "https://api.github.com/users/azizgharbi/repos";
 
+const entrypoint = "https://api.github.com/users/azizgharbi/repos";
 async function getRepositories() {
   const res = await fetch(entrypoint);
   if (!res.ok) {
