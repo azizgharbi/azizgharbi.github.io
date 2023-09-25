@@ -83,6 +83,7 @@ a {
     background: #825432;
     border: #80c71f 9px solid;
     z-index: 99999999;
+    width: 300px;
   }
   .rectangle_head {
     margin-top: 5px;
