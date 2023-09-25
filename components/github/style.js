@@ -2,7 +2,7 @@ const styles = {
   GithubBox: {
     overflowY: "auto",
     height: "200px",
-    width: "300px",
+    width: "250px",
     padding: "10px",
     background: "burlywood",
     marginRight: "auto",
