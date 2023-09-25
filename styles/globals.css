@@ -77,11 +77,12 @@ a {
   }
 
   .rectangle_text {
-    background-image: url("https://azizgharbi.github.io/images/ground-pixel.jpg");
+    background-image: url("https://azizgharbi.github.io/images/ground-pixel.png");
     position: absolute;
     margin-top: 120px;
+    width: 260px;
     padding: 20px;
-    border: #80c71f 9px solid;
+    background-position: 68px 306px;
     z-index: 99999999;
   }
   .rectangle_head {
