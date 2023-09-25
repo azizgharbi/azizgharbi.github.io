@@ -27,11 +27,11 @@ export function GithubBox() {
 
   return (
     <>
-      <div style={Style.GithubBox}>
+      <div className="github-box">
         {repos
           ? repos.map(({ full_name, html_url }) => {
               return (
-                <div key={full_name} style={Style.link}>
+                <div className="link" key={full_name}>
                   <a href={html_url} target="_blank" rel="noopener noreferrer">
                     {full_name}
                   </a>

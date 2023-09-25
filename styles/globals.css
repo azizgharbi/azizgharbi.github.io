@@ -83,8 +83,9 @@ a {
     background: #825432;
     border: #80c71f 9px solid;
     z-index: 99999999;
-    width: 250px;
+    width: 600px;
   }
+
   .rectangle_head {
     margin-top: 5px;
     margin-left: 10px;
@@ -97,6 +98,24 @@ a {
     position: absolute;
     margin-top: 10px;
     animation: move 2s linear infinite;
+  }
+
+  .github-box {
+    overflow-y: auto;
+    height: 200px;
+    width: 450px;
+    padding: 10px;
+    background: burlywood;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+  }
+
+  .link {
+    padding: 5px;
+    color: hwb(26deg 13% 62%);
+    text-decoration: underline;
+    font-weight: bold;
   }
 
   @keyframes move {
@@ -137,5 +156,16 @@ a {
   .footer > p > a {
     color: #3c44a9;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .github-box {
+      height: 200px;
+      width: 250px;
+    }
+
+    .rectangle_text {
+      width: 250px;
+    }
   }
 }
