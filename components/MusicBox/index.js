@@ -3,7 +3,7 @@ import Rectangle from "../Rectangle";
 
 const infos = [
   {
-    description: `Aziz Gharbi, 
+    description: `Aziz gharbi, 
         Software developer
         I'am Passionate about learning new technologies,
         Open source , Lua, Rust, (Typescript/JavaScript) and Linux Lover.`,
