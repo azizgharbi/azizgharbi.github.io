@@ -77,10 +77,10 @@ a {
   }
 
   .rectangle_text {
+    background-image: url("https://azizgharbi.github.io/images/ground-pixel.jpg");
     position: absolute;
     margin-top: 120px;
     padding: 20px;
-    background: #825432;
     border: #80c71f 9px solid;
     z-index: 99999999;
   }
