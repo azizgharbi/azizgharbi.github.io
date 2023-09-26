@@ -11,9 +11,13 @@ export default function Home() {
       <MusicxBox />
       <div className="game_text">
         <p>
-          Don&apos;t tell anyone, But finding the Triforce box will grant you +25 charisma points in real life.
+          Don&apos;t tell anyone, But finding the Triforce box will grant you
+          +25 charisma points in real life.
         </p>
-        <p><span className="hint_game">Hint: </span>Only the power of the click can unlock the secrets of the boxes. Choose wisely, hero</p>
+        <p>
+          <span className="hint_game">Hint: </span>Only the power of the click
+          can unlock the secrets of the boxes. Choose wisely, hero
+        </p>
       </div>
       <GithubBox />
       <Footer />

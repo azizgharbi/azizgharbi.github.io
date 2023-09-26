@@ -4,7 +4,7 @@ import Rectangle from "../Rectangle";
 const infos = [
   {
     description: `Aziz Gharbi, Software Developer Extraordinaire!
-    I'm so passionate about learning new technologies, I once tried to date a computer. 
+    I'm so passionate about learning new technologies.
     Open source enthusiast (because who likes secrets anyway?), Lua, Python, Rust, 
     TypeScript/JavaScript junkie, and Linux lover. Penguins are my spirit animal!`,
     note: "C3",
