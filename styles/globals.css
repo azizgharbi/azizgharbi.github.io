@@ -111,6 +111,12 @@ a {
     margin-bottom: 100px;
   }
 
+  .hint_game{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: larger;
+  }
+
   .link {
     padding: 5px;
     color: hwb(26deg 13% 62%);
