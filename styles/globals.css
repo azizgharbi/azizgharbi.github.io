@@ -48,6 +48,7 @@ a {
   body {
     color: #f9ffff;
     background: #169c9d;
+    min-width: 375px;
   }
 
   .ground_1 {
