@@ -168,11 +168,11 @@ a {
   @media only screen and (max-width: 480px) {
     .github-box {
       height: 200px;
-      width: 250px;
+      width: 325px;
     }
 
     .rectangle_text {
-      width: 250px;
+      width: 325px;
     }
   }
 }

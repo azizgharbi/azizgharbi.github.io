@@ -1,1 +1,34 @@
-{"version":3,"pages404":true,"basePath":"/azizgharbi.github.io","redirects":[{"source":"/azizgharbi.github.io/","destination":"/azizgharbi.github.io","basePath":false,"internal":true,"statusCode":308,"regex":"^/azizgharbi\\.github\\.io/$"},{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[],"staticRoutes":[{"page":"/","regex":"^/(?:/)?$","routeKeys":{},"namedRegex":"^/(?:/)?$"}],"dataRoutes":[],"rewrites":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "basePath": "/azizgharbi.github.io",
+  "redirects": [
+    {
+      "source": "/azizgharbi.github.io/",
+      "destination": "/azizgharbi.github.io",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/azizgharbi\\.github\\.io/$"
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rewrites": []
+}
