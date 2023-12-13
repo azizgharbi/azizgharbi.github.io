@@ -25,12 +25,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f38caa;
+  background: #825432;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b2516d;
+  background: #825432;
 }
 a {
   color: inherit;
