@@ -12,6 +12,7 @@ async function getRepositories() {
 
 export default function GithubBox() {
   const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     async function fetchData() {
       const data = await getRepositories();
@@ -20,6 +21,7 @@ export default function GithubBox() {
           .filter(({ fork }) => !fork)
           .map(({ full_name, html_url }) => ({ full_name, html_url }))
       );
+      setLoading(false);
     }
     fetchData();
   }, []);
@@ -27,7 +29,7 @@ export default function GithubBox() {
   return (
     <>
       <div className="github-box">
-        {repos ? (
+        {!loading ? (
           repos.map(({ full_name, html_url }) => {
             return (
               <div className="link" key={full_name}>
