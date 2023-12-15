@@ -9,11 +9,11 @@ export default function Card() {
   return (
     <div>
       <div className="terminal">
-      <div className="terminal-menu">
-        <span className="red"></span>
-        <span className="yellow"></span>
-        <span className="green"></span>
-      </div>
+        <div className="terminal-menu">
+          <span className="red"></span>
+          <span className="yellow"></span>
+          <span className="green"></span>
+        </div>
         <Typewriter text={text} speed={50} />
       </div>
     </div>
