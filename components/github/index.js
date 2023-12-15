@@ -28,22 +28,20 @@ export default function GithubBox() {
   }, []);
 
   return (
-    <>
-      <div className="github-box">
-        {!loading ? (
-          repos.map(({ full_name, html_url }) => {
-            return (
-              <div className="link" key={full_name}>
-                <a href={html_url} target="_blank" rel="noopener noreferrer">
-                  {full_name}
-                </a>
-              </div>
-            );
-          })
-        ) : (
-          <div className="loading-data">Loading...</div>
-        )}
-      </div>
-    </>
+    <div className="github-box">
+      {!loading ? (
+        repos.map(({ full_name, html_url }) => {
+          return (
+            <div className="link" key={full_name}>
+              <a href={html_url} target="_blank" rel="noopener noreferrer">
+                {full_name}
+              </a>
+            </div>
+          );
+        })
+      ) : (
+        <div className="loading-data">Loading...</div>
+      )}
+    </div>
   );
 }
