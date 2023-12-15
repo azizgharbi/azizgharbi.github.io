@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 
 const entrypoint = 'https://api.github.com/users/azizgharbi/repos';

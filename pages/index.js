@@ -3,7 +3,7 @@
 import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 import GithubBox from '../components/github';
-import Card from '../components/Card';
+import Terminal from '../components/Terminal';
 
 export const metadata = {
   title: 'aziz gharbi',
@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div>
       <Menu />
-      <Card />
+      <Terminal />
       <GithubBox />
       <Footer />
     </div>

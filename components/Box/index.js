@@ -1,4 +1,5 @@
 'use client';
+
 import Goku from './../../public/images/link.gif';
 import Image from 'next/image';
 
