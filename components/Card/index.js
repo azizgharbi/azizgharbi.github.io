@@ -7,8 +7,15 @@ Linux lover. Penguins are my spirit animal!`;
 
 export default function Card() {
   return (
-    <div className="card">
-      <Typewriter text={text} speed={50} />
+    <div>
+      <div className="terminal">
+      <div className="terminal-menu">
+        <span className="red"></span>
+        <span className="yellow"></span>
+        <span className="green"></span>
+      </div>
+        <Typewriter text={text} speed={50} />
+      </div>
     </div>
   );
 }

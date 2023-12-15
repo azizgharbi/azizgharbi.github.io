@@ -111,11 +111,10 @@ a {
     text-decoration: underline;
     font-weight: bold;
   }
-  .card {
+  .terminal {
     background: #2d3436;
     height: 180px;
     line-height: 1.6;
-    padding: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -123,6 +122,36 @@ a {
     width: 450px;
     border-radius: 5px;
   }
+
+  .terminal > p {
+    padding: 10px;
+    color: #fff;
+  }
+
+  .terminal-menu {
+    height: 20px;
+    background-color: #1e272e;
+  }
+
+  .terminal-menu > span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .green {
+    background-color: #80c71f;
+  }
+  .red {
+    background-color: #e74c3c;
+  }
+  .yellow {
+    background-color: #f9ca24;
+  }
+
   @keyframes move {
     0% {
       transform: translateX(0px);
@@ -158,9 +187,9 @@ a {
       width: 325px;
       margin-bottom: 30px;
     }
-    .card {
+    .terminal {
       width: 325px;
-      height: 250px;
+      height: 269px;
     }
     .rectangle_text {
       width: 325px;

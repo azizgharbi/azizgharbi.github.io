@@ -17,12 +17,10 @@ const Typewriter = ({ text, speed = 100 }) => {
   }, [text, speed]);
 
   return (
-    <div>
-      <p>
-        {content}
-        <span className="cursor"></span>
-      </p>
-    </div>
+    <p>
+      {content}
+      <span className="cursor"></span>
+    </p>
   );
 };
 
