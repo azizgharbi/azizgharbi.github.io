@@ -1,5 +1,5 @@
-"use client";
-import Rectangle from "../Rectangle";
+'use client';
+import Rectangle from '../Rectangle';
 
 const infos = [
   {
@@ -7,15 +7,15 @@ const infos = [
     I'm so passionate about learning new technologies.
     Open source enthusiast (because who likes secrets anyway?), Lua, Python, Rust, 
     TypeScript/JavaScript junkie, and Linux lover. Penguins are my spirit animal!`,
-    note: "C3",
+    note: 'C3',
   },
   {
     description: null,
-    note: "C4",
+    note: 'C4',
   },
   {
     description: null,
-    note: "C5",
+    note: 'C5',
   },
 ];
 
@@ -23,8 +23,8 @@ const MusicxBox = () => {
   return (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
+        display: 'flex',
+        justifyContent: 'center',
       }}
     >
       {infos.map(({ description, note }) => (

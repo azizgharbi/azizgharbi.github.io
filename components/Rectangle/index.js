@@ -1,7 +1,7 @@
-import { useCallback, useState } from "react";
-import * as Tone from "tone";
-import Box from "./../Box";
-import Style from "./style";
+import { useCallback, useState } from 'react';
+import * as Tone from 'tone';
+import Box from './../Box';
+import Style from './style';
 
 export default function Rectangle({ description, note }) {
   const [hover, setHover] = useState(true);
