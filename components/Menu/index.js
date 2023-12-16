@@ -1,5 +1,13 @@
 'use client';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faStackOverflow,
+  faLinkedin,
+  faXTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+
 export default function Menu() {
   return (
     <div className="ground_1">
@@ -10,7 +18,16 @@ export default function Menu() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/azizgharbi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
@@ -19,7 +36,7 @@ export default function Menu() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            StackOverflow
+            <FontAwesomeIcon icon={faStackOverflow} />
           </a>
         </li>
         <li>
@@ -28,7 +45,7 @@ export default function Menu() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Linkedin
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
       </ul>
