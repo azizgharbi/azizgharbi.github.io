@@ -45,8 +45,6 @@ a {
   }
   .ground_1 {
     height: 50px;
-    background: #d63031;
-    border-bottom: 10px solid #e74c3c;
   }
   .ground_menu {
     display: flex;
