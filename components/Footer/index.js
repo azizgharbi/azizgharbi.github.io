@@ -1,10 +1,9 @@
-'use client';
-
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className="footer">
       <p>
-        The end. <span>built with Passion!</span>
+        © {year} - <span>built with Passion!</span>
       </p>
     </div>
   );

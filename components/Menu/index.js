@@ -1,5 +1,3 @@
-'use client';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub,
@@ -41,7 +39,7 @@ export default function Menu() {
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/in/aziz-g-3b6397137/"
+            href="https://www.linkedin.com/in/aziz-gharbi-dev/"
             target="_blank"
             rel="noopener noreferrer"
           >

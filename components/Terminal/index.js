@@ -1,5 +1,3 @@
-'use client';
-
 import Typewriter from '../Typewriter';
 
 const text = `Aziz Gharbi, Software Developer Extraordinaire! I'm so passionate about

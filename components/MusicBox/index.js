@@ -1,4 +1,3 @@
-'use client';
 import Rectangle from '../Rectangle';
 
 const infos = [

@@ -1,5 +1,3 @@
-'use client';
-
 import { useCallback, useState } from 'react';
 import * as Tone from 'tone';
 import Box from './../Box';

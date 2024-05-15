@@ -1,9 +1,7 @@
-'use client';
-
 import Goku from './../../public/images/link.gif';
 import Image from 'next/image';
 
-const box = function ({ show, text }) {
+const box = function({ show, text }) {
   return (
     <>
       {show ? (
