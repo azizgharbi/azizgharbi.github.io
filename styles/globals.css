@@ -112,8 +112,8 @@ a {
   }
   .terminal {
     background: #2d3436;
-    height: 180px;
     line-height: 1.6;
+    min-height: 365px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -123,12 +123,12 @@ a {
   }
 
   .terminal > p {
-    padding: 0px 10px;
+    padding: 24px 24px;
     color: #fff;
   }
 
   .terminal-menu {
-    height: 20px;
+    height: 34px;
     background-color: #1e272e;
   }
 
@@ -181,20 +181,21 @@ a {
     color: #3c44a9;
     cursor: pointer;
   }
+
   @media only screen and (max-width: 480px) {
     .github-box {
-      width: 325px;
+      width: 385px;
       margin-bottom: 30px;
     }
     .terminal {
-      width: 325px;
-      height: 269px;
+      width: 385px;
+      min-height: 475px;
     }
     .rectangle_text {
       width: 325px;
     }
     .footer {
-      position: relative;
+      position: static;
       width: 100%;
       height: 80px;
       color: white;
