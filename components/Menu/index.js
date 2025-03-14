@@ -12,15 +12,6 @@ export default function Menu() {
       <ul className="ground_menu">
         <li>
           <a
-            href="https://twitter.com/fl4vasavah"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faXTwitter} />
-          </a>
-        </li>
-        <li>
-          <a
             href="https://github.com/azizgharbi"
             target="_blank"
             rel="noopener noreferrer"
