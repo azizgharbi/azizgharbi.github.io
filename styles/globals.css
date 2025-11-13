@@ -17,15 +17,17 @@ body {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #000000;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d63031;
+  background: #00FF41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d63031;
+  background: #00FF41;
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
 }
 a {
   color: inherit;
@@ -39,8 +41,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: #f9ffff;
-    background: #636e72;
+    color: #00FF41;
+    background: #000000;
     min-width: 375px;
   }
   .ground_1 {
@@ -68,17 +70,19 @@ a {
     position: absolute;
     margin-top: 120px;
     padding: 20px;
-    background: #d63031;
-    border: #80c71f 9px solid;
+    background: rgba(0, 20, 0, 0.95);
+    border: #00FF41 9px solid;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.5), inset 0 0 20px rgba(0, 255, 65, 0.1);
     z-index: 99999999;
     width: 600px;
   }
   .rectangle_head {
     margin-top: 5px;
     margin-left: 10px;
-    background: #d63031;
+    background: #00FF41;
     height: 10px;
     width: 75px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
   }
   .rectangle_img {
     position: absolute;
@@ -89,7 +93,9 @@ a {
     width: 450px;
     height: auto;
     padding: 10px;
-    background: #d63031;
+    background: rgba(0, 20, 0, 0.9);
+    border: 2px solid #00FF41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), inset 0 0 20px rgba(0, 255, 65, 0.05);
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 24px;
@@ -100,18 +106,22 @@ a {
     height: 430px;
   }
   .hint_game {
-    color: blueviolet;
+    color: #00FF41;
     font-weight: bold;
     font-size: larger;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
   }
   .link {
     padding: 5px;
-    color: #fff;
+    color: #00FF41;
     text-decoration: underline;
     font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
   }
   .terminal {
-    background: #2d3436;
+    background: rgba(0, 20, 0, 0.9);
+    border: 2px solid #00FF41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), inset 0 0 20px rgba(0, 255, 65, 0.05);
     line-height: 1.6;
     min-height: 365px;
     margin-left: auto;
@@ -124,12 +134,14 @@ a {
 
   .terminal > p {
     padding: 24px 24px;
-    color: #fff;
+    color: #00FF41;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
   }
 
   .terminal-menu {
     height: 34px;
-    background-color: #1e272e;
+    background-color: rgba(0, 10, 0, 0.95);
+    border-bottom: 1px solid #00FF41;
   }
 
   .terminal-menu > span {
@@ -142,13 +154,16 @@ a {
   }
 
   .green {
-    background-color: #80c71f;
+    background-color: #00FF41;
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.8);
   }
   .red {
-    background-color: #e74c3c;
+    background-color: #003B00;
+    box-shadow: 0 0 5px rgba(0, 59, 0, 0.8);
   }
   .yellow {
-    background-color: #f9ca24;
+    background-color: #008F11;
+    box-shadow: 0 0 5px rgba(0, 143, 17, 0.8);
   }
 
   @keyframes move {
@@ -170,16 +185,19 @@ a {
     bottom: 0;
     width: 100%;
     height: 80px;
-    color: white;
+    color: #00FF41;
     text-align: center;
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
   }
   .footer > p > span {
     font-size: 18px;
-    color: #ffc312;
+    color: #00FF41;
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
   }
   .footer > p > a {
-    color: #3c44a9;
+    color: #008F11;
     cursor: pointer;
+    text-shadow: 0 0 5px rgba(0, 143, 17, 0.8);
   }
 
   @media only screen and (max-width: 480px) {
