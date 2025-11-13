@@ -1,9 +1,7 @@
 import Typewriter from '../Typewriter';
 
-const text = `Aziz Gharbi, Software Developer Extraordinaire! I'm so passionate about
-learning new technologies. Open source enthusiast (because who likes
-secrets anyway?), Lua, Python, TypeScript/JavaScript junkie, and
-Linux lover. Turtles are my spirit animal!`;
+const text = `Aziz Gharbi, Software Developer! Lua, Python, (TypeScript/JavaScript junkie, and
+Linux lover. Boatman steady through these digital waves and social dystopia!`;
 
 export default function Terminal() {
   return (

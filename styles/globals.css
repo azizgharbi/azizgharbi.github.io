@@ -94,7 +94,7 @@ a {
     height: auto;
     padding: 10px;
     background: rgba(0, 20, 0, 0.9);
-    border: 2px solid #00FF41;
+    border: 2px solid #ffffff;
     box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), inset 0 0 20px rgba(0, 255, 65, 0.05);
     margin-right: auto;
     margin-left: auto;
@@ -134,7 +134,7 @@ a {
 
   .terminal > p {
     padding: 24px 24px;
-    color: #00FF41;
+    color: #ffffff;
     text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
   }
 
@@ -191,11 +191,11 @@ a {
   }
   .footer > p > span {
     font-size: 18px;
-    color: #00FF41;
+    color: #ffffff;
     text-shadow: 0 0 10px rgba(0, 255, 65, 0.8);
   }
   .footer > p > a {
-    color: #008F11;
+    color: #ffffff;
     cursor: pointer;
     text-shadow: 0 0 5px rgba(0, 143, 17, 0.8);
   }
