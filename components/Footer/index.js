@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <p>
-        © {year} - <span>built with Passion!</span>
+        © {year} - <span>built with ai!</span>
       </p>
     </div>
   );
