@@ -1,10 +1,14 @@
-export default function Footer() {
-  const year = new Date().getFullYear();
+import { links, profile } from '../../lib/site';
+
+export default function Footer({ year }) {
   return (
-    <div className="footer">
+    <footer className="footer">
       <p>
-        © {year} - <span>built with ai!</span>
+        © {year} {profile.name}. Built with Next.js and a little help from AI.{' '}
+        <a href={links.source} target="_blank" rel="noopener noreferrer">
+          View the source
+        </a>
       </p>
-    </div>
+    </footer>
   );
 }

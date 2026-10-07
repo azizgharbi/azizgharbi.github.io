@@ -1,43 +1,34 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faStackOverflow,
-  faLinkedin,
-  faXTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faStackOverflow } from '@fortawesome/free-brands-svg-icons/faStackOverflow';
+import Icon from '../Icon';
+import { links } from '../../lib/site';
+
+const PROFILES = [
+  { label: 'GitHub', href: links.github, icon: faGithub },
+  { label: 'LinkedIn', href: links.linkedin, icon: faLinkedin },
+  { label: 'Stack Overflow', href: links.stackoverflow, icon: faStackOverflow },
+];
 
 export default function Menu() {
   return (
-    <div className="ground_1">
-      <ul className="ground_menu">
-        <li>
-          <a
-            href="https://github.com/azizgharbi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://stackoverflow.com/users/7253451/g-aziz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faStackOverflow} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/aziz-gharbi-dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </li>
+    <nav className="menu" aria-label="Profiles">
+      <ul className="menu__list">
+        {PROFILES.map(({ label, href, icon }) => (
+          <li key={label}>
+            <a
+              className="menu__link"
+              href={href}
+              target="_blank"
+              rel="me noopener noreferrer"
+              aria-label={`Aziz Gharbi on ${label}`}
+              title={label}
+            >
+              <Icon icon={icon} />
+            </a>
+          </li>
+        ))}
       </ul>
-    </div>
+    </nav>
   );
 }

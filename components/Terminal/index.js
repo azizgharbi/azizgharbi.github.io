@@ -1,22 +1,18 @@
-import Typewriter from '../Typewriter';
-
-const text = `Aziz Gharbi — Software & Cloud Developer.
-Experienced in Lua, Python, TypeScript/JavaScript, and Linux-based environments.
-AWS architecture design, covering EC2, Lambda, S3, API Gateway, CloudFormation, and containerized deployments (ECS/EKS).
-Focused on scalable backend systems, automation, and DevOps integration, I have experience with monitoring, observability, and system reliability.
-Skilled in CloudWatch, Datadog and centralized logging to ensure performance, uptime, and deep system insight.`;
-
-export default function Terminal() {
+// A terminal window. Its title bar sticks to the top of the viewport and
+// doubles as the site header.
+export default function Terminal({ title, actions, children }) {
   return (
-    <div>
-      <div className="terminal">
-        <div className="terminal-menu">
-          <span className="red"></span>
-          <span className="yellow"></span>
-          <span className="green"></span>
-        </div>
-        <Typewriter text={text} speed={50} />
-      </div>
+    <div className="terminal">
+      <header className="terminal__bar">
+        <span className="terminal__lights" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </span>
+        <span className="terminal__title">{title}</span>
+        <span className="terminal__actions">{actions}</span>
+      </header>
+      {children}
     </div>
   );
 }

@@ -22,6 +22,10 @@ jobs:
         run: npm install
       - name: Build project
         run: npm run build
+        env:
+          # Read-only use: lets the build fetch the GitHub projects list
+          # without hitting the shared unauthenticated rate limit.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Export static files
         run: npm run export
       - name: Add .nojekyll file
